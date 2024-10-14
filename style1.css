@@ -1,0 +1,477 @@
+:root {
+  --dark: #092c3e;
+  --lighter: #1a485d;
+}
+
+body {
+  background-color: var(--dark);
+  font-family: Andale Mono, monospace;
+  color: antiquewhite;
+}
+
+#container {
+  width: 400px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  margin-bottom: auto;
+}
+
+#logo {
+  height: 80px;
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  font-weight: 10;
+  font-size: 60px;
+  text-align: center;
+}
+
+.panel {
+  background-color: var(--lighter);
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 8px 24px 0 rgba(0, 0, 0, 0.3);
+}
+
+#Login,
+#Hasło /*pola tekstowe na login i hasło*/ {
+  width: 70%;
+  height: 30px;
+  background-color: var(--dark);
+  border: none;
+  color: antiquewhite;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 12px 24px;
+  box-shadow: 0px 2px 6px 0 rgba(0, 0, 0, 0.3);
+}
+
+.napis /*Labelki Login i Hasło*/ {
+  font-size: 25px;
+}
+
+.przycisk-zaloguj {
+  transition: background-color 0.5s, color 0.5s;
+  background: antiquewhite;
+  font-family: Andale Mono, monospace;
+  color: var(--dark);
+  border: none;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0px 2px 6px 0 rgba(0, 0, 0, 0.3);
+}
+
+#przycisk-zaloguj:hover /*po najechaniu na przycisk*/ {
+  background-color: rgb(210, 198, 182);
+}
+
+#sala {
+  height: 650px;
+  width: 1516px;
+}
+
+#bar {
+  width: 220px;
+  height: 90px;
+  background-color: var(--lighter);
+  border-color: #6bbaff;
+  border-width: 3px;
+  border-style: solid;
+  margin-left: 640px;
+  margin-bottom: 50px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  float: left;
+}
+
+.doniczka {
+  float: left;
+  background-color: #202d1b;
+  width: 20px;
+  height: 100px;
+  padding: 5px;
+  margin: 15px;
+  border-radius: 15px;
+  border-width: 2px;
+  border-color: #443027;
+  border-style: solid;
+}
+
+#jadalnia {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  max-width: 1516px;
+}
+
+.table {
+  width: 50px;
+  height: 116px;
+  font-family: Andale Mono, monospace;
+  font-size: 23px;
+  box-shadow: 0px 12px 18px 0 rgba(0, 0, 0, 0.3);
+}
+
+.przycisk-szef {
+  text-decoration: none;
+  transition: background-color 0.5s, color 0.5s;
+  background: antiquewhite;
+  font-family: Andale Mono, monospace;
+  color: var(--dark);
+  border: none;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 0px 2px 6px 0 rgba(0, 0, 0, 0.3);
+}
+
+.error /*komunikaty pod inputami tekstowymi sygnalizujące niepoprawność wprowadzonych danych*/ {
+  font-size: 12px;
+  color: red;
+  margin-top: -15px;
+  margin-bottom: 13px;
+}
+
+.wyloguj {
+  text-decoration: none;
+  border: none;
+  color: #007ab8;
+}
+
+.login-wyloguj {
+  float: left;
+  margin-top: 10px;
+  margin-left: 555px;
+}
+
+.wiersz {
+  width: 687px;
+  height: 30px;
+  padding: 2px;
+  margin: 4px;
+  background-color: antiquewhite;
+  color: var(--dark);
+  font-size: 25px;
+  border-radius: 3px;
+}
+
+.wiersz-trans {
+  width: 687px;
+  opacity: 0.2;
+  height: 30px;
+  padding: 2px;
+  margin: 4px;
+  background-color: antiquewhite;
+  color: var(--dark);
+  font-size: 25px;
+  border-radius: 3px;
+}
+
+.kafelek {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  margin: 5px;
+  text-align: center;
+  width: 144px;
+  height: 144px;
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #00aaff;
+  float: left;
+}
+
+.checkbox-trans,
+.checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  opacity: 0.5;
+  background-color: white;
+  height: 20px;
+  width: 20px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  outline: none;
+  cursor: pointer;
+}
+
+.checkbox::after,
+.checkbox-trans::after    /*ptaszek*/ {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 1000;
+  font-size: 18px;
+  content: "\f00c"; /*kod dla "ptaszka" w checkboxie żeby się pojawił*/
+  color: green;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.checkbox:hover,
+.checkbox-trans:hover {
+  background-color: #a3adb3;
+}
+
+.checkbox:checked:after,
+.checkbox-trans:checked:after {
+  display: block;
+  background-color: antiquewhite;
+}
+
+.panel_kel {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 47%;
+  height: 600px;
+  padding: 10px;
+  margin: 10px;
+  float: left;
+  background-color: var(--lighter);
+  border-radius: 10px;
+  box-shadow: 0px 8px 24px 0 rgba(0, 0, 0, 0.3);
+}
+
+.nr {
+  margin-left: 5px;
+  margin-right: 15px;
+  float: left;
+  width: 20px;
+}
+
+.nazwa {
+  margin-right: 15px;
+  width: 330px;
+  float: left;
+}
+
+.cena {
+  margin-right: 15px;
+  width: 90px;
+  float: left;
+}
+
+.usun {
+  margin-right: 15px;
+  width: 45px;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.ch_kel {
+  margin-right: 15px;
+  width: 60px;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.ch_ku {
+  margin-right: 15px;
+  width: 40px;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.usun_but {
+  background-color: var(--lighter);
+  color: antiquewhite;
+  border: none;
+  height: 22px;
+  border-radius: 3px;
+  box-shadow: 0px 32px 64px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.usun_but:hover {
+  opacity: 0.8;
+}
+
+#razem {
+  background-color: rgb(244, 206, 156);
+  width: 690px;
+  height: 45px;
+  padding: 2px;
+  margin: 4px;
+  margin-left: 24px;
+  color: var(--dark);
+  font-size: 38px;
+  border-radius: 3px;
+  float: left;
+}
+
+.wyrownanie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.przycisk-wybor {
+  text-align: center;
+  width: 140px;
+  height: 30px;
+  transition: background-color 0.5s, color 0.5s;
+  background: antiquewhite;
+  font-family: Andale Mono, monospace;
+  color: var(--dark);
+  border: none;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-left: 60px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0px 2px 6px 0 rgba(0, 0, 0, 0.3);
+  float: left;
+  cursor: pointer;
+}
+
+#rachunek {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(244, 206, 156);
+  width: 170px;
+  height: 45px;
+  padding: 2px;
+  margin: 4px;
+  margin-right: 25px;
+  color: var(--dark);
+  font-size: 30px;
+  border-radius: 3px;
+  float: right;
+}
+
+.poup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: var(--dark);
+  background-color: black;
+  width: 400px;
+  height: 200px;
+  display: none;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  position: absolute;
+  background-color: rgb(244, 206, 156);
+  border-radius: 10px;
+  box-shadow: 0px 8px 24px 0 rgba(0, 0, 0, 0.3);
+  padding: 5px;
+}
+
+#suma {
+  width: 50px;
+  height: 30px;
+  margin-left: 20px;
+}
+
+#poup_wynik {
+  font-size: 26px;
+  margin-bottom: 30px;
+  margin-top: 60px;
+}
+
+#krzyzyk {
+  position: absolute;
+  margin-left: 91%;
+  margin-bottom: 42%;
+  font-size: 25px;
+  color: red;
+  cursor: pointer;
+}
+
+.czerwone_kolko {
+  background-color: green;
+  box-shadow: 0px 0px 10px 0 rgb(65, 202, 65);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  bottom: 125px;
+  left: 40px;
+}
+
+.ramka_table {
+  width: 50px;
+  height: 116px;
+  float: left;
+  margin: 15px;
+}
+
+.przycisk-powrot {
+  float: left;
+  text-decoration: none;
+  transition: background-color 0.5s, color 0.5s;
+  background: rgb(244, 206, 156);
+  font-family: Andale Mono, monospace;
+  font-size: 30px;
+  color: var(--dark);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 2px 6px 0 rgba(0, 0, 0, 0.3);
+  height: 45px;
+  width: 250px;
+  margin: 4px;
+  margin-left: 45px;
+  padding-bottom: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-wyloguj-ku {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.img {
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+.j {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+}
