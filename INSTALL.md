@@ -33,7 +33,7 @@ Ta instrukcja opisuje kroki, które pozwolą Ci uruchomić aplikację **SmartSta
 
 1. Otwórz plik konfiguracyjny `baza.php` w folderze projektu SmartStaff.
 
-2. Ewentualnie zaktualizuj ustawienia bazy danych (plik baza.php), aby odpowiadały twojemu środowisku. Przykładowa konfiguracja wygląda następująco:
+2. Ewentualnie zaktualizuj ustawienia bazy danych, aby odpowiadały twojemu środowisku. Przykładowa konfiguracja wygląda następująco:
 
    ```php
    <?php
