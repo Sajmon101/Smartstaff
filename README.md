@@ -55,11 +55,10 @@ Diagram przypadków użycia ilustruje interakcje między poszczególnymi użytko
 - **PHP**: Backend aplikacji, odpowiedzialny za logikę i przetwarzanie danych.
 - **MySQL**: Baza danych przechowująca informacje o użytkownikach, daniach, zamówieniach, itp.
 
-## Instalacja
+## Uruchomienie Aplikacji
 
-1. **Skopiuj repozytorium**:
-   ```bash
-   git clone https://github.com/your-username/SmartStaff.git
+Aby uzyskać szczegółowe instrukcje dotyczące uruchomienia aplikacji SmartStaff na lokalnym serwerze, zapoznaj się z plikiem [INSTALL.md](./INSTALL.md). Znajdziesz tam kroki potrzebne do konfiguracji środowiska i uruchomienia aplikacji.
+
 
 
 
