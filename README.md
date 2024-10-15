@@ -51,8 +51,8 @@ Diagram przypadków użycia ilustruje interakcje między poszczególnymi użytko
 ## Technologie
 
 - **HTML5** i **CSS3**: Frontend aplikacji, odpowiadający za warstwę wizualną i interfejs użytkownika.
-- **JavaScript**: Używany do obsługi dynamicznych elementów strony i interakcji z użytkownikiem.
-- **PHP**: Backend aplikacji, odpowiedzialny za logikę biznesową i przetwarzanie danych.
+- **JavaScript**: Używany do obsługi dynamicznych elementów strony.
+- **PHP**: Backend aplikacji, odpowiedzialny za logikę i przetwarzanie danych.
 - **MySQL**: Baza danych przechowująca informacje o użytkownikach, daniach, zamówieniach, itp.
 
 ## Instalacja
