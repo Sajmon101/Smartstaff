@@ -9,11 +9,11 @@ Aplikacja oferuje różne możliwości w zależności od typu konta. Dostępne r
 ### 1. Szef
 - **Zarządzanie daniami**: Dodawanie nowych pozycji do menu, łącznie z możliwością dodania zdjęć, które są automatycznie optymalizowane pod kątem rozmiaru.
 - **Zarządzanie pracownikami**: Dodawanie nowych pracowników do systemu z przypisaniem roli oraz zdjęciem, które również jest automatycznie zmniejszane.
-- **Raportowanie**: Podgląd liczby sprzedanych sztuk poszczególnych dań w danym miesiącu oraz liczby zamówień obsłużonych przez każdego pracownika w wybranym okresie.
+- **Statystyki**: Podgląd liczby sprzedanych sztuk poszczególnych dań w danym miesiącu oraz liczby zamówień obsłużonych przez każdego pracownika w wybranym okresie.
 
-<div style="text-align: center;">
+<p align="center">
   <img src="Images/BossView.png" alt="Main Menu" width="500"/>
-</div>
+</p>
 
 ### 2. Kelner
 - **Wprowadzanie zamówień**: Kelnerzy mogą dodawać zamówienia dla stolików, przy czym dania są automatycznie przypisywane do kucharzy, a napoje do barmanów.
