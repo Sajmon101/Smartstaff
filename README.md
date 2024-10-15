@@ -20,7 +20,12 @@ The application offers various functionalities depending on the account type. Th
 - **Order Monitoring**: The waiter can see all orders, with those entered by other waiters grayed out for better clarity.
 - **Readiness Notifications**: After a dish is prepared by the chef or bartender, the waiter responsible for the order receives a readiness notification.
 
-<img src="Images/WaiterView.png" alt="Game Screenshot" width="500"/> <img src="Images/Order.png" alt="Game Screenshot" width="500"/> 
+<p align="center">
+  <img src="Images/WaiterView.png" alt="Main Menu" width="600"/>
+</p>
+<p align="center">
+  <img src="Images/Order.png" alt="Main Menu" width="600"/>
+</p>
 
 ### 3. Chef and Bartender
 - **Order Fulfillment**: The dishes and drinks are divided between chefs and bartenders to ensure efficient order preparation.
