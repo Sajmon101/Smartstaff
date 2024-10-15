@@ -24,7 +24,7 @@ Aplikacja oferuje różne możliwości w zależności od typu konta. Dostępne r
 
 Aplikacja korzysta z relacyjnej bazy danych. Poniżej znajduje się schemat bazy danych przedstawiający główne tabele i relacje między nimi.
 
-![Schemat Bazy Danych](link_do_schematu_bazy_danych.png)
+![Schemat Bazy Danych]<img src="Images/DBStructure.png" alt="Game Screenshot" width="500"/> 
 
 ## Diagram Przypadków Użycia
 
@@ -48,5 +48,5 @@ Diagram przypadków użycia ilustruje interakcje między poszczególnymi użytko
 ## Preview
 <img src="Images/BossView.png" alt="Main Menu" width="500"/> <img src="Images/ChefView.png" alt="Instruction" width="500"/>
 <img src="Images/WaiterView.png" alt="Game Screenshot" width="500"/> <img src="Images/Order.png" alt="Game Screenshot" width="500"/> 
-<img src="Images/DBStructure.png" alt="Game Screenshot" width="500"/> 
+
 <img src="Images/UseCaseDiagram.png" alt="Game Screenshot" width="500"/> 
