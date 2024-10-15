@@ -1,39 +1,39 @@
-# Instrukcja Uruchomienia Aplikacji SmartStaff
+# SmartStaff Application Startup Guide
 
-Ta instrukcja opisuje kroki, które pozwolą Ci uruchomić aplikację **SmartStaff** na lokalnym serwerze, takim jak **XAMPP** lub **WAMP**. Aplikacja została przetestowana i uruchomiona w środowisku lokalnym (localhost), więc jeśli zdecydujesz się na inną konfigurację, kroki mogą się różnić.
+This guide outlines the steps needed to run the **SmartStaff** application on a local server, such as **XAMPP** or **WAMP**. The application has been tested and launched in a local environment (localhost), so if you choose a different setup, the steps may vary.
 
-## Krok 1: Zainstaluj XAMPP lub WAMP
+## Step 1: Install XAMPP or WAMP
 
-1. **Pobierz** i **zainstaluj** XAMPP lub WAMP:
-   - XAMPP: [Oficjalna strona pobierania XAMPP](https://www.apachefriends.org/index.html)
-   - WAMP: [Oficjalna strona pobierania WAMP](http://www.wampserver.com/)
+1. **Download** and **install** XAMPP or WAMP:
+   - XAMPP: [Official XAMPP Download Page](https://www.apachefriends.org/index.html)
+   - WAMP: [Official WAMP Download Page](http://www.wampserver.com/)
 
-2. **Uruchom lokalny serwer** (Apache) oraz bazę danych (MySQL) za pomocą panelu kontrolnego XAMPP lub WAMP.
+2. **Start the local server** (Apache) and the database (MySQL) using the XAMPP or WAMP control panel.
 
-## Krok 2: Skopiuj pliki aplikacji do katalogu serwera
+## Step 2: Copy the Application Files to the Server Directory
 
-1. Skopiuj folder aplikacji do katalogu `htdocs` (dla XAMPP) lub `www` (dla WAMP). Katalog docelowy powinien wyglądać następująco:
-   - Dla XAMPP: `C:/xampp/htdocs/SmartStaff`
-   - Dla WAMP: `C:/wamp/www/SmartStaff`
+1. Copy the application folder to the `htdocs` directory (for XAMPP) or the `www` directory (for WAMP). The destination directory should look as follows:
+   - For XAMPP: `C:/xampp/htdocs/SmartStaff`
+   - For WAMP: `C:/wamp/www/SmartStaff`
 
-## Krok 3: Utwórz bazę danych
+## Step 3: Create the Database
 
-1. Otwórz przeglądarkę internetową i przejdź do [phpMyAdmin](http://localhost/phpmyadmin/).
+1. Open your web browser and go to [phpMyAdmin](http://localhost/phpmyadmin/).
 
-2. Utwórz nową bazę danych:
-   - Kliknij „New” w menu po lewej stronie.
-   - Wpisz nazwę bazy danych (np. `smartstaff`) i kliknij „Create”.
+2. Create a new database:
+   - Click on "New" in the left-hand menu.
+   - Enter the database name (e.g., `smartstaff`) and click "Create."
 
-3. **Zaimportuj strukturę bazy danych**:
-   - Przejdź do zakładki „Import” w phpMyAdmin.
-   - Wybierz plik `.sql` zawierający strukturę bazy danych dla SmartStaff (możesz go znaleźć w repozytorium projektu w folderze "DB").
-   - Kliknij „Import”, aby zaimportować strukturę bazy danych.
+3. **Import the Database Structure**:
+   - Go to the "Import" tab in phpMyAdmin.
+   - Select the `.sql` file containing the SmartStaff database structure (you can find this in the project repository in the "DB" folder).
+   - Click "Import" to upload the database structure.
 
-## Krok 4: Skonfiguruj połączenie z bazą danych
+## Step 4: Configure the Database Connection
 
-1. Otwórz plik konfiguracyjny `baza.php` w folderze projektu SmartStaff.
+1. Open the configuration file `baza.php` in the SmartStaff project folder.
 
-2. Ewentualnie zaktualizuj ustawienia bazy danych, aby odpowiadały twojemu środowisku. Przykładowa konfiguracja wygląda następująco:
+2. If necessary, update the database settings to match your environment. A sample configuration might look like this:
 
    ```php
    <?php
@@ -44,27 +44,29 @@ Ta instrukcja opisuje kroki, które pozwolą Ci uruchomić aplikację **SmartSta
    $charset = 'utf8mb4';
    ?>
    
-- user: Upewnij się, że używasz właściwego użytkownika MySQL. Dla domyślnych instalacji XAMPP/WAMP, użytkownikiem jest zazwyczaj root.
-- pass: Domyślnie w XAMPP/WAMP hasło jest puste (''), chyba że ustawiłeś inne.
-Zapisz plik po modyfikacjach.
+- **user**: Ensure that you are using the correct MySQL user. For default XAMPP/WAMP installations, the user is usually `root`.
+- **pass**: By default in XAMPP/WAMP, the password is empty (`''`), unless you have set a different one.
+Save the file after making changes.
 
-## Krok 5: Uruchom aplikację
+## Step 5: Launch the Application
 
-1. Przejdź do przeglądarki internetowej i wpisz adres lokalnego serwera:
+1. Open your web browser and enter the local server address:
 
    http://localhost/SmartStaff
    
-2. Powinna załadować się strona główna aplikacji SmartStaff. Możesz teraz zalogować się na różne konta i przetestować funkcjonalność aplikacji.
 
-**Uwaga**: Hasła w bazie danych są szyfrowane, więc nie są bezpośrednio widoczne. W celu ułatwienia testów, każde konto testowe ma ustawione hasło takie samo jak jego login.
- 
-## Krok 6: Rozwiązywanie problemów
+2. The SmartStaff application homepage should load. You can now log in with various accounts and test the application's functionality.
 
-- **Błąd połączenia z bazą danych**: Sprawdź, czy serwer MySQL w panelu XAMPP jest uruchomiony i czy dane w `baza.php` są poprawne.
-- **Błąd 404**: Upewnij się, że folder projektu znajduje się w odpowiednim katalogu serwera (`htdocs` dla XAMPP lub `www` dla WAMP).
-- **Problemy z uprawnieniami**: Sprawdź, czy masz odpowiednie uprawnienia dostępu do folderów projektu i bazy danych.
+**Note**: Passwords in the database are encrypted, so they are not directly visible. For testing convenience, each test account has a password set to match its login.
+
+## Step 6: Troubleshooting
+
+- **Database Connection Error**: Check if the MySQL server is running in the XAMPP control panel and verify that the credentials in `baza.php` are correct.
+- **404 Error**: Make sure the project folder is in the correct server directory (`htdocs` for XAMPP or `www` for WAMP).
+- **Permission Issues**: Ensure you have the necessary access permissions to the project folders and the database.
 
 ---
 
-**Uwaga**: Instrukcja oparta jest na konfiguracji na lokalnym serwerze (localhost), która została użyta podczas tworzenia i testowania aplikacji. Inne konfiguracje mogą wymagać dodatkowych kroków lub modyfikacji.
+**Note**: This guide is based on a local server (localhost) configuration, which was used during the development and testing of the application. Other configurations may require additional steps or modifications.
+
 
