@@ -1,64 +1,60 @@
 # SmartStaff
 
-**SmartStaff** to aplikacja wspomagająca organizację pracy w lokalach gastronomicznych. Jest stworzona w technologii HTML, CSS, PHP i JavaScript. Aplikacja umożliwia sprawną obsługę zamówień i zarządzanie personelem, dzięki podziałowi na role i automatyzacji procesów kuchennych oraz barowych.
+**SmartStaff** is an application developed in Polish that supports work organization in gastronomic establishments. It is built using HTML, CSS, PHP, and JavaScript. The application enables efficient order handling and staff management by dividing roles and automating kitchen and bar processes.
 
-## Funkcjonalności
+## Features
 
-Aplikacja oferuje różne możliwości w zależności od typu konta. Dostępne role to: **Szef**, **Kucharz**, **Barman** oraz **Kelner**. Poniżej znajdziesz szczegółowy opis funkcji dostępnych dla każdej roli:
+The application offers various functionalities depending on the account type. The available roles are: **Manager**, **Chef**, **Bartender**, and **Waiter**. Below is a detailed description of the functions available for each role:
 
-### 1. Szef
-- **Zarządzanie daniami**: Dodawanie nowych pozycji do menu, łącznie z możliwością dodania zdjęć, które są automatycznie optymalizowane pod kątem rozmiaru.
-- **Zarządzanie pracownikami**: Dodawanie nowych pracowników do systemu z przypisaniem roli oraz zdjęciem, które również jest automatycznie zmniejszane.
-- **Statystyki**: Podgląd liczby sprzedanych sztuk poszczególnych dań w danym miesiącu oraz liczby zamówień obsłużonych przez każdego pracownika w wybranym okresie.
+### 1. Manager
+- **Dish Management**: Adding new menu items, including the option to add photos that are automatically optimized for size.
+- **Employee Management**: Adding new employees to the system with assigned roles and photos, which are also automatically resized.
+- **Statistics**: Viewing the number of units sold for individual dishes in a given month and the number of orders handled by each employee over a selected period.
 
 <p align="center">
   <img src="Images/BossView.png" alt="Main Menu" width="500"/>
 </p>
 
-### 2. Kelner
-- **Wprowadzanie zamówień**: Kelnerzy mogą dodawać zamówienia dla stolików, przy czym dania są automatycznie przypisywane do kucharzy, a napoje do barmanów.
-- **Monitorowanie zamówień**: Kelner widzi wszystkie zamówienia, przy czym te wprowadzone przez innych kelnerów są wyszarzone dla lepszej przejrzystości.
-- **Powiadomienia o gotowości**: Po przygotowaniu dania przez kucharza lub barmana, kelner odpowiedzialny za zamówienie otrzymuje powiadomienie o gotowości.
+### 2. Waiter
+- **Order Entry**: Waiters can add orders for tables, with dishes automatically assigned to chefs and drinks to bartenders.
+- **Order Monitoring**: The waiter can see all orders, with those entered by other waiters grayed out for better clarity.
+- **Readiness Notifications**: After a dish is prepared by the chef or bartender, the waiter responsible for the order receives a readiness notification.
 
 <img src="Images/WaiterView.png" alt="Game Screenshot" width="500"/> <img src="Images/Order.png" alt="Game Screenshot" width="500"/> 
 
-### 3. Kucharz i Barman
-- **Realizacja zamówień**: Podział dań oraz napojów między kucharzy i barmanów w celu efektywnego przygotowania zamówienia.
-- **Powiadomienia**: Po ukończeniu przygotowania dania lub napoju, osoba odpowiedzialna oznacza danie jako gotowe, co generuje powiadomienie dla odpowiedniego kelnera.
+### 3. Chef and Bartender
+- **Order Fulfillment**: The dishes and drinks are divided between chefs and bartenders to ensure efficient order preparation.
+- **Notifications**: Once a dish or drink is ready, the person responsible marks it as ready, which generates a notification for the appropriate waiter.
 
 <p align="center">
   <img src="Images/ChefView.png" alt="Main Menu" width="500"/>
 </p>
 
-## Struktura Bazy Danych
+## Database Structure
 
-Aplikacja korzysta z relacyjnej bazy danych. Poniżej znajduje się schemat bazy danych przedstawiający główne tabele i relacje między nimi.
+The application uses a relational database. Below is the database schema showing the main tables and relationships between them.
 
 <p align="center">
   <img src="Images/DBStructure.png" alt="Main Menu" width="600"/>
 </p>
 
-> **Uwaga:** Poniższy schemat bazy danych przedstawia zrefaktoryzowaną wersję, która nie jest jeszcze zaimplementowana w aktualnym kodzie.
+> **Note:** The database schema below shows a refactored version that has not yet been implemented in the current code.
 
-## Diagram Przypadków Użycia
+## Use Case Diagram
 
-Diagram przypadków użycia ilustruje interakcje między poszczególnymi użytkownikami a systemem, umożliwiając lepsze zrozumienie funkcjonalności i przepływu informacji w aplikacji.
+The use case diagram illustrates the interactions between individual users and the system, providing a better understanding of the application's functionality and information flow.
 
 <p align="center">
   <img src="Images/UseCaseDiagram.png" alt="Main Menu" width="600"/>
 </p>
 
-## Technologie
+## Technologies
 
-- **HTML5** i **CSS3**: Frontend aplikacji, odpowiadający za warstwę wizualną i interfejs użytkownika.
-- **JavaScript**: Używany do obsługi dynamicznych elementów strony.
-- **PHP**: Backend aplikacji, odpowiedzialny za logikę i przetwarzanie danych.
-- **MySQL**: Baza danych przechowująca informacje o użytkownikach, daniach, zamówieniach, itp.
+- **HTML5** and **CSS3**: Frontend of the application, responsible for the visual layer and user interface.
+- **JavaScript**: Used to handle dynamic elements of the page.
+- **PHP**: Backend of the application, responsible for logic and data processing.
+- **MySQL**: Database storing information about users, dishes, orders, etc.
 
-## Uruchomienie Aplikacji
+## Running the Application
 
-Aby uzyskać szczegółowe instrukcje dotyczące uruchomienia aplikacji SmartStaff na lokalnym serwerze, zapoznaj się z plikiem [INSTALL.md](./INSTALL.md). Znajdziesz tam kroki potrzebne do konfiguracji środowiska i uruchomienia aplikacji.
-
-
-
-
+For detailed instructions on how to run the SmartStaff application on a local server, please refer to the [INSTALL.md](./INSTALL.md) file. There, you will find the necessary steps to set up the environment and run the application.
