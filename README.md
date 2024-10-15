@@ -35,7 +35,7 @@ Aplikacja oferuje różne możliwości w zależności od typu konta. Dostępne r
 Aplikacja korzysta z relacyjnej bazy danych. Poniżej znajduje się schemat bazy danych przedstawiający główne tabele i relacje między nimi.
 
 <p align="center">
-  <img src="Images/DBStructure.png" alt="Main Menu" width="500"/>
+  <img src="Images/DBStructure.png" alt="Main Menu" width="600"/>
 </p>
 
 > **Uwaga:** Poniższy schemat bazy danych przedstawia zrefaktoryzowaną wersję, która nie jest jeszcze zaimplementowana w aktualnym kodzie.
@@ -45,7 +45,7 @@ Aplikacja korzysta z relacyjnej bazy danych. Poniżej znajduje się schemat bazy
 Diagram przypadków użycia ilustruje interakcje między poszczególnymi użytkownikami a systemem, umożliwiając lepsze zrozumienie funkcjonalności i przepływu informacji w aplikacji.
 
 <p align="center">
-  <img src="Images/UseCaseDiagram.png" alt="Main Menu" width="500"/>
+  <img src="Images/UseCaseDiagram.png" alt="Main Menu" width="600"/>
 </p>
 
 ## Technologie
