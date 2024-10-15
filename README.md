@@ -26,19 +26,25 @@ Aplikacja oferuje różne możliwości w zależności od typu konta. Dostępne r
 - **Realizacja zamówień**: Podział dań oraz napojów między kucharzy i barmanów w celu efektywnego przygotowania zamówienia.
 - **Powiadomienia**: Po ukończeniu przygotowania dania lub napoju, osoba odpowiedzialna oznacza danie jako gotowe, co generuje powiadomienie dla odpowiedniego kelnera.
 
-<img src="Images/ChefView.png" alt="Instruction" width="500"/>
+<p align="center">
+  <img src="Images/ChefView.png" alt="Main Menu" width="500"/>
+</p>
 
 ## Struktura Bazy Danych
 
 Aplikacja korzysta z relacyjnej bazy danych. Poniżej znajduje się schemat bazy danych przedstawiający główne tabele i relacje między nimi.
 
-<img src="Images/DBStructure.png" alt="Game Screenshot" width="500"/> 
+<p align="center">
+  <img src="Images/DBStructure.png" alt="Main Menu" width="500"/>
+</p>
 
 ## Diagram Przypadków Użycia
 
 Diagram przypadków użycia ilustruje interakcje między poszczególnymi użytkownikami a systemem, umożliwiając lepsze zrozumienie funkcjonalności i przepływu informacji w aplikacji.
 
-<img src="Images/UseCaseDiagram.png" alt="Game Screenshot" width="500"/> 
+<p align="center">
+  <img src="Images/UseCaseDiagram.png" alt="Main Menu" width="500"/>
+</p>
 
 ## Technologie
 
