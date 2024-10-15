@@ -38,6 +38,8 @@ Aplikacja korzysta z relacyjnej bazy danych. Poniżej znajduje się schemat bazy
   <img src="Images/DBStructure.png" alt="Main Menu" width="500"/>
 </p>
 
+> **Uwaga:** Poniższy schemat bazy danych przedstawia zrefaktoryzowaną wersję, która nie jest jeszcze zaimplementowana w aktualnym kodzie.
+
 ## Diagram Przypadków Użycia
 
 Diagram przypadków użycia ilustruje interakcje między poszczególnymi użytkownikami a systemem, umożliwiając lepsze zrozumienie funkcjonalności i przepływu informacji w aplikacji.
