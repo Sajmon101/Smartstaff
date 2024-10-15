@@ -52,7 +52,7 @@ Zapisz plik po modyfikacjach.
 
 1. Przejdź do przeglądarki internetowej i wpisz adres lokalnego serwera:
 
-http://localhost/SmartStaff
+   http://localhost/SmartStaff
    
 2. Powinna załadować się strona główna aplikacji SmartStaff. Możesz teraz zalogować się na różne konta i przetestować funkcjonalność aplikacji.
 
