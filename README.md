@@ -63,3 +63,7 @@ The use case diagram illustrates the interactions between individual users and t
 ## Running the Application
 
 For detailed instructions on how to run the SmartStaff application on a local server, please refer to the [INSTALL.md](./INSTALL.md) file. There, you will find the necessary steps to set up the environment and run the application.
+
+## Assets
+
+All images used in this project are sourced from [Pixabay](https://pixabay.com/).
